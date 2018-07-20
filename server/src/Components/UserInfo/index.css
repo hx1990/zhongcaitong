@@ -1,0 +1,24 @@
+.userInfo {
+    width: 85%;
+    background: #f2f6ff;
+    overflow: hidden;
+}
+.usertitle {
+    width:100%;
+    display:flex;
+    align-items: center;
+    margin-left: 78px;
+    height: 70px;
+}
+.usertitle img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.tablist {
+    width: 100%;
+    
+}
+.ant-upload-list{
+    display: none
+}

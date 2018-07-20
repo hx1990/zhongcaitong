@@ -1,0 +1,18 @@
+<top-bar  title='合伙人分润' url='/pages/my/my'/>
+
+<view class='content'>
+    <view class='msg'>
+      <view >总分润：{{profitBalance}}</view>
+      <view>已提现：{{takeOutCash}}</view>
+      <!-- <button bindtap='getMoney'>提现</button> -->
+    </view>
+    <view class='list'>
+      <view>今日营业额：{{todayTotalMoney}}</view>
+       <button class='detail' bindtap='detail'>详情</button>
+    </view>
+    <picker mode="date" value="{{date}}" start="2018-07-08" end="2022-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          <button type='primary' class='history'>查看历史分润</button>
+        </view>
+    </picker>
+</view>

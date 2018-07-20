@@ -1,0 +1,23 @@
+<top-bar title="合伙人网点" url="/pages/my/my"/>
+<view class='content'>
+    <view class='list'>
+       <view class='item top'>
+          <view>姓名</view>
+            <view>电话</view>
+           <view>地址</view>
+           <view>经营行业</view>
+           <view>授权号</view>
+       </view>
+       <view class='item' wx:if="{{data.length==0}}">合伙人下暂无网点</view>
+       <label wx:for='{{data}}' wx:key="{{index}}">
+         <view class='item'>
+          <view>{{item.name}}</view>
+            
+           <view>{{item.phone}}</view>
+           <view>{{item.address}}</view>
+           <view>{{item.industry}}</view>
+           <view>{{item.allowNo}}</view>
+         </view>
+       </label>
+    </view>
+</view>

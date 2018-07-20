@@ -1,0 +1,32 @@
+.content{
+  width: 100%;
+  overflow: hidden;
+}
+.title{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-bottom: 10rpx;
+}
+.list .item{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110rpx;
+  border-bottom: 2rpx solid #ccc;
+  font-size: 34rpx;
+}
+.list .head{
+  background: #ccc;
+  height: 100rpx;
+}
+.list .item view{
+  flex: 1;
+  text-align: center
+}
+.list .item :nth-child(2){
+  flex: 2
+}

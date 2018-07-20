@@ -1,0 +1,10 @@
+<top-bar title="申请进度" url="/pages/apply/apply"/>
+<view class='content'>
+   <view class='progress'>
+      <view class='text'>审核中...</view>
+      <!-- <progress percent="80" color="pink" stroke-width="20" active-mode="backwards" active/> -->
+   </view>
+   <view class='titel'>
+      后台工作人员正在审核您提交的资料，大约需要1-2个工作日，请耐心等候！
+   </view>
+</view>

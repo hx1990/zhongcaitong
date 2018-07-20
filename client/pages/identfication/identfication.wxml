@@ -1,0 +1,33 @@
+<top-bar  title='身份认证' url='/pages/set/set'/>
+<view class='content'>
+   <view class='userinfo'>
+      <view class='item'>
+        <view>姓名：</view>
+        <input type='text'></input>
+      </view>
+       <view class='item'>
+        <view>手机号：</view><input type='number'></input>
+      </view>
+       <view class='item'>
+        <view>身份证号：</view><input type='idcard'></input>
+      </view>
+      <view class='item'>
+        <view>审核状态</view><button>通过审核</button> 
+      </view>
+   </view>
+  <view class='upload'>
+     <view class='upload-title'>
+       上传身份证
+     </view>
+     <view class='upload-content'>
+        <view class='item'>
+           <image src="{{zpic}}"></image>
+           <view>身份证正面</view>
+        </view>
+        <view  class='item'>
+           <image src="{{fpic}}"></image>
+           <view>身份证反面</view>
+        </view>
+     </view>
+  </view>   
+</view>

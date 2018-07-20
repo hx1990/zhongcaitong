@@ -1,0 +1,80 @@
+<top-bar title="申请网点" url="/pages/apply/apply"/>
+<view class='content'>
+   <view class='list'>
+     <view  class='item'>
+       <text class='xinhao'>*</text>地址：浙江省   
+      <picker class='padding' bindchange="bindCityChange" value="{{index}}" range="{{cityarr}}">
+          {{array[index].name}}市
+      </picker>
+      <picker bindchange="bindAreaChange" value="{{areaIndex}}" range="{{array[index].area}}">
+          {{array[index].area[areaIndex]}}
+      </picker>
+     </view>
+     <view class='item'>
+      <view><text class='xinhao'>*</text>详细地址：</view><input type='text' bindinput='addDetail'></input>
+     </view>
+      <view  class='item'>
+       <text class='xinhao'>*</text>网点区域：
+      <picker class='padding' bindchange="areaCityChange" value="{{selectIndex}}" range="{{cityarr}}">
+          {{array[selectIndex].name}}市
+      </picker>
+      <picker bindchange="areaAreaChange" value="{{selectAreaIndex}}" range="{{array[selectIndex].area}}">
+       {{array[selectIndex].area[selectAreaIndex]}}
+      </picker>
+     </view>
+     <!-- <view class='item'>
+       <view>单位：</view><input type='text' bindinput='addCompany'></input>
+     </view> -->
+     <view class='item'>
+       <view><text class='xinhao'>*</text>姓名：</view><input type='text' placeholder='请和招行卡号保持一致' bindinput='addName'></input>
+     </view>
+     <view class='item'>
+       <view><text class='xinhao'>*</text>手机：</view><input  maxlength='11' type='number' bindinput='addPhone'></input>
+     </view>
+     <view class='item'>
+       <view><text class='xinhao'>*</text>经营行业：</view><input type='text' bindinput='addIndustry'></input>
+     </view>
+     <view class='item'>
+       <view><text class='xinhao'>*</text>身份证号：</view><input  maxlength='18' type='idcard' bindinput='addIdcard'></input>
+     </view>
+     
+     <view class='item'>
+       <view class='paddingleft'>招行卡号：</view><input type='number' maxlength='16' placeholder='必须是招行卡号' bindinput='addBankCard'></input>
+     </view>
+
+     <!-- <view class='item'>
+       <view>合伙人姓名：</view><input type='text' bindinput='addPartner'></input>
+     </view>
+
+     <view class='item'>
+       <view>合伙人手机：</view><input type='number' bindinput='addPartnerPhone'></input>
+     </view> -->
+
+   </view>
+   <view class='upload'>
+     <view class='upload-title'>
+       上传身份证
+     </view>
+     <view class='upload-content'>
+        <view class='item'>
+           <image class="{{Zbchange?'image':''}}" bindload="hideloading" src="{{zpic}}" bindtap="uploadzIdcard"></image>
+           <text class='xinhao'>*</text><view>身份证正面</view>
+        </view>
+        <view  class='item'>
+           <image src="{{fpic}}" class="{{Fbchange?'image':''}}" bindload="hideloading" bindtap="uploadfIdcard"></image>
+           <text class='xinhao'>*</text><view>身份证反面</view>
+        </view>
+        <view  class='item' bindtap="uploadLicense">
+           <image src="{{license}}" bindload="hideloading" class="{{Lbchange?'image':''}}"></image>
+           <text class='xinhao'>*</text><view>营业执照</view>
+        </view>
+
+        <view  class='item' bindtap="uploadBankUp">
+           <image src="{{bankCardPic}}" bindload="hideloading" class="{{bkchange?'image':''}}"></image>
+           <view>招行卡正面</view>
+        </view>
+
+     </view>
+     <button bindtap='submit'>确认添加</button>
+  </view>   
+</view>

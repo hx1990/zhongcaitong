@@ -1,0 +1,109 @@
+.top{
+  width: 100%;
+  height: 360rpx;
+  position: fixed;
+  left: 0;
+  top:0;
+  background: #dc3516;
+  color: #fff;
+}
+.config{
+  display: flex;
+  margin-top:60rpx;
+  height: 50rpx;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.config image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.top .title{
+  margin-top: 30rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 50rpx;
+  
+  text-align: center;
+}
+.userinfo{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+}
+.userinfo .item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size:34rpx;
+}
+.userinfo .userPic{
+  width: 100rpx;
+  height: 100rpx;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden
+}
+.userinfo .text view{
+   height: 60rpx;
+   line-height: 60rpx;
+}
+.top-hold{
+  width: 100%;
+  height: 400rpx;
+}
+.content{
+  overflow: hidden;
+  width: 100%;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.list .item {
+  width: 100%;
+  height: 130rpx;
+  border-bottom: 4rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+.list .one{
+  justify-content: flex-start
+}
+.list .left{
+  display: flex;
+}
+.list .left image,.list .one image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-left: 40rpx;
+}
+.list .right image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+}
+.componey{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 40rpx;
+  background: #ccc
+}
+.apply{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}

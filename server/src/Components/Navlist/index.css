@@ -1,0 +1,55 @@
+.nav {
+    width: 100%;
+    background:#fff;
+}
+.nav .linkList {
+    width: 15%;
+    height: 100%;
+}
+/*.nav .linkList li {
+    
+}*/
+.nav .linkList li img  {
+   width: 20px;
+   height: 20px;
+   margin-left: 50px;
+   margin-right: 10px;
+}
+.nav .routerWrap .linkList a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    font-family: "宋体";
+    color:rgba(0, 0, 0, 0.65);
+    height: 60px;
+    line-height: 60px;
+}
+.routerWrap {
+    width: 100%;
+    display:flex;
+}
+.activeRoute{
+    background:rgba(0,255,0, 0.6);
+}
+.activeRoute span {
+    color: #2d67ff;
+}
+.ant-menu{
+    padding-left: 30px;
+}
+.subtitle{
+    padding-left: 47px;
+}
+.ant-menu-item-selected > a{
+    height: 40px;
+    line-height: 40px;
+}
+ .ant-menu-submenu > .ant-menu-submenu-title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+.ant-menu-inline .ant-menu-submenu-title{
+    font-size: 16px
+}

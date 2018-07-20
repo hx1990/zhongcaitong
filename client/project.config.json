@@ -1,0 +1,62 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.1",
+	"appid": "wxa03ce0bc5262fb71",
+	"projectname": "%E5%BD%A9%E7%A5%A8",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "测试",
+					"pathName": "pages/index/index",
+					"query": "id=123",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "测试1",
+					"pathName": "https://www.baidu.com",
+					"query": "id=123",
+					"scene": "1011"
+				},
+				{
+					"id": 2,
+					"name": "测试111",
+					"pathName": "pages/index/index",
+					"query": "scene=868575021887171",
+					"scene": "1011"
+				}
+			]
+		}
+	}
+}

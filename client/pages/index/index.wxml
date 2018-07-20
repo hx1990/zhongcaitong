@@ -1,0 +1,25 @@
+<view class='top'>
+  中彩通
+</view>
+<view class='top-hold'></view>
+<view class='content' >
+   <view class='banner'>
+     <image src="{{img}}"></image>
+   </view>
+   <zan-noticebar text="{{text}}" bindtap='saoma'  scrollable="{{true}}" speed="{{speed}}"/>
+   <view class='pay'>
+     <view class='pay-text'>
+         选择购买数量
+     </view>
+     <view class='pay-number'>
+      <zan-stepper class="add-number" size="{{stepper.size}}" stepper="{{ stepper.stepper }}" min="{{ stepper.min }}" max="{{ stepper.max }}" bind:change="handleZanStepperChange" ></zan-stepper>
+     </view>
+     <view class='pay-money'>
+        合计金额： {{total}}元
+     </view>
+     <view class='pay-title'>
+        十八岁以下未成年人，不得购买
+     </view>
+     <button class='submit' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">确认支付</button>
+   </view>
+</view>

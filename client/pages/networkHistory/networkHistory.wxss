@@ -1,0 +1,29 @@
+.content{
+  width: 100%;
+  overflow: hidden;
+}
+.title{
+  display: flex;
+  justify-content: space-around;
+
+}
+.item{
+  display: flex;
+  justify-content: space-around;
+}
+.item view{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: 2rpx solid #ccc
+}
+.frist{
+  background: #ccc;
+  margin-top: 20rpx;
+}
+.no-data{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  width: 100%
+}

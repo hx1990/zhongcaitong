@@ -1,0 +1,45 @@
+.content{
+  width: 100%;
+}
+.list {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+.list .item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+  height: 100rpx;
+}
+.list .top{
+  background: #ccc;
+  line-height: 100rpx;
+  height: 100rpx;
+  
+}
+
+ .item view{
+  flex: 1;
+  height: 60rpx;
+  text-align: center;
+  word-break:break-all;
+  margin:20rpx 0;
+}
+.list .top view{
+  background: #ccc;
+  line-height: 100rpx;
+  height: 100rpx;
+  margin: 0;
+}
+.item view:nth-child(3){
+  flex: 2;
+  
+}
+.item view:nth-child(2){
+  flex: 1;
+  
+}

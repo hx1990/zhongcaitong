@@ -1,0 +1,16 @@
+<top-bar title="客服" url="/pages/my/my"/>
+<view class='content'>
+   <view class='title' bindtap='callPhone'>
+     当您的系统、设备遇到问题，请拨打：4001668500
+   </view>
+   <view class='detail'>
+      <view>你也可以通过这留言，我们会及时处理</view>
+      <textarea bindinput='addReark'></textarea>
+      
+   </view>
+   <view class='remark'>
+   <view>联系电话：</view> 
+    <input maxlength='11' type='number' bindinput='addPhone'  placeholder='输入联系电话'></input>
+      </view>
+   <button bindtap='subMit'>提交</button>
+</view>

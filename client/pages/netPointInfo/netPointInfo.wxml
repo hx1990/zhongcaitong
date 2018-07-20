@@ -1,0 +1,25 @@
+<top-bar title="网点信息" url="/pages/apply/apply"/>
+<view class='content'>
+   <view class='list'>
+     <view class='item'>
+       <view>姓名：{{partner.name}}</view>
+     </view>
+     <view class='item'>
+       <view>手机：{{partner.phone}}</view>
+     </view>
+     <view class='item'>
+       <view>申请时间：{{partner.applyTime}}</view>
+     </view>
+      <view class='item'>
+       <view>申请状态：{{partner.statusMessage}}</view>
+     </view>
+     <view class='item' wx:if="{{partner.status==4}}">
+       <view>通过时间：{{partner.passTime}}</view>
+     </view>
+     <view class='item' wx:if="{{partner.status==5}}">
+       <view>不通过原因：{{partner.remark}}</view>
+     </view>
+     
+     <button type='warn' wx:if="{{partner.status==5}}" bindtap="applyAgine" >重新申请</button>
+   </view>
+</view>

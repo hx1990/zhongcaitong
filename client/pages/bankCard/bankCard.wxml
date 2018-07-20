@@ -1,0 +1,16 @@
+<top-bar  title='添加银行卡' url='/pages/set/set'/>
+<view class='content'>
+   <view class='userinfo'>
+      <view class='item'>
+        <view>姓名：</view>
+        <input type='text'></input>
+      </view>
+       <view class='item'>
+        <view>开户行：</view><input type='number'></input>
+      </view>
+       <view class='item'>
+        <view>卡号：</view><input type='idcard'></input>
+      </view>
+      
+   </view>
+</view>

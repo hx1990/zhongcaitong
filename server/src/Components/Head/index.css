@@ -1,0 +1,50 @@
+
+.head{
+    width: 100%;
+    background: rgb(215,40,37);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.left{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.ltitle1 {
+    font-family: "微软雅黑";
+    font-size: 24px;
+}
+.rtitle {
+    font-family:"Arial";
+    font-size:20px;
+}
+.left img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+.left span {
+    margin-left: 20px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+.right {
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.right span {
+    font-size: 14;
+    color: #fff;
+    font-family: "微软雅黑";
+    margin-left: 10px;
+}
+.right .login {
+   margin-right: 46px;
+}

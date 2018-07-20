@@ -1,0 +1,17 @@
+<top-bar title="提现" url="/pages/my/my"/>
+<view class='content'>
+   <view class='money'>当前余额： 元</view>
+   <view class='getmoney'>
+      <view class='item'>
+         我要提现：<input type='number'></input> 元
+      </view>
+      <view class='item'>
+         <view>收款人：xxx</view>
+         <view class='cardnumber'>卡号：12032034948585892</view>
+      </view>
+      <view class='item'>
+         本次提现：T+1到账
+      </view>
+   </view>
+   <button>确认</button>
+</view>

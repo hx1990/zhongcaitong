@@ -1,0 +1,54 @@
+<top-bar title="申请送票员" url="/pages/apply/apply"/>
+<view class='content'>
+   <view class='list'>
+     <view  class='item'>
+       <text class='xinhao'>*</text>地址：浙江省   
+      <picker class='padding' bindchange="bindCityChange" value="{{index}}" range="{{cityarr}}">
+          {{array[index].name}}市
+      </picker>
+      <picker bindchange="bindAreaChange" value="{{areaIndex}}" range="{{array[index].area}}">
+          {{array[index].area[areaIndex]}}
+      </picker>
+     </view>
+     <view class='item'>
+      <view><text class='xinhao'>*</text>详细地址：</view><input type='text' bindinput='addDetail'></input>
+     </view>
+     <view  class='item'>
+       <text class='xinhao'>*</text>送票区域：
+      <picker class='padding' bindchange="areaCityChange" value="{{selectIndex}}" range="{{cityarr}}">
+          {{array[selectIndex].name}}市
+      </picker>
+      <picker bindchange="areaAreaChange" value="{{selectAreaIndex}}" range="{{array[selectIndex].area}}">
+       {{array[selectIndex].area[selectAreaIndex]}}
+      </picker>
+     </view>
+
+     <view class='item'>
+       <view><text class='xinhao'>*</text>姓名：</view><input type='text' bindinput='addName'></input>
+     </view>
+     <view class='item'>
+       <view><text class='xinhao'>*</text>手机：</view><input maxlength='11' type='number' bindinput='addPhone'></input>
+     </view>
+
+     <view class='item'>
+       <view><text class='xinhao'>*</text>身份证号：</view><input maxlength='18' type='idcard' bindinput='addIdcard'></input>
+     </view>
+
+   </view>
+   <view class='upload'>
+     <view class='upload-title'>
+       上传身份证
+     </view>
+     <view class='upload-content'>
+        <view class='item'>
+           <image class="{{Zbchange?'image':''}}" bindload="hideloading" src="{{zpic}}" bindtap="uploadzIdcard"></image>
+           <view><text class='xinhao'>*</text>身份证正面</view>
+        </view>
+        <view  class='item'>
+           <image src="{{fpic}}" class="{{Fbchange?'image':''}}" bindload="hideloading" bindtap="uploadfIdcard"></image>
+           <view><text class='xinhao'>*</text>身份证反面</view>
+        </view>
+     </view>
+     <button bindtap='submit'>确认添加</button>
+  </view>   
+</view>

@@ -1,0 +1,94 @@
+.content{
+    width: 85%;
+}
+.content h3{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+}
+.address{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.toptitle{
+    height: 50px;
+    margin-top:20px;
+    font-size: 22px;
+    text-align: left;
+    border-bottom: 1px solid red;
+}
+.address .addresswarp{
+  display: flex;
+  flex-direction: row;
+}
+.wrapleft{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.addaddress{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+}
+.addaddress .addtitle{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+}
+.addaddress input{
+    width: 40px;
+}
+.addaddress .detailaddress{
+    width: 180px;
+    margin-left: 10px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+.item .subitem{
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.item .subitem .inputwidth{
+    width: 160px;
+}
+.rangpicker{
+    width: 160px;
+}
+
+.width140{
+    width:140px;
+}
+.width160{
+    width:160px;
+}
+input {
+    width: 120xp;
+}
+.wrapmsg{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.ant-row{
+    display: flex;
+}
+.ant-checkbox-group{
+    width:50%
+}
+.BMap_cpyCtrl  {  
+        display:none;   
+    }  
+.anchorBL{  
+        display:none;   
+    }   

@@ -1,0 +1,28 @@
+<top-bar title="审核列表" url="/pages/my/my"/>
+<view class='content'>
+   <view class='top' bindtap="change">
+    <view class="{{inow==1?'click':''}}" data-value="1">未通过审核</view>  
+    <view class="{{inow==2?'click':''}} date" data-value="2">通过审核</view>
+   </view>
+
+   <view class='list'>
+       <view class='item'>
+           <view>ID</view>
+           <view>角色</view>
+           <view>实名</view>
+           <view>手机</view>
+           <view>申请区域</view>
+           <view>是否通过</view>
+       </view>
+       <label wx:for='{{auditList}}' wx:key="{{index}}">
+          <view class='item'>
+           <view>{{item.ID}}</view>
+           <view>{{item.role}}</view>
+           <view>{{item.name}}</view>
+           <view>{{item.phone}}</view>
+           <view>{{item.area}}</view>
+           <view class='pass'>通过</view>
+          </view>
+       </label>
+    </view>
+</view>

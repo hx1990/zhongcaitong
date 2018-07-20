@@ -1,0 +1,15 @@
+<top-bar  title='设置' url='/pages/my/my'/>
+<view class='content'>
+    <view class='list'>
+      <view class='item' bindtap="identification">
+        <view>身份认证</view>
+        <image src='../../img/go-right.png'></image>
+      </view>
+      <view class='item' bindtap="bankCard">
+        <view>添加银行卡</view>
+        <image src='../../img/go-right.png'></image>
+      </view>
+    </view>
+    <button open-type="openSetting">打开授权设置</button>
+     <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">用户授权设置</button>
+</view>

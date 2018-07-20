@@ -1,0 +1,24 @@
+<top-bar  title='分润' url='/pages/dividend/dividend'/>
+<view class='content'>
+<view class='title'>
+ <view>日期：{{date}}</view> 
+ <view>总分润：{{data.totalProfit}}</view>
+ </view>
+  <view class='list'>
+       <view class='item frist'>
+           <view>网点姓名</view>
+           <view>网点分润</view>
+           <view>合伙人分润</view>
+           <view>总分润</view>
+       </view>
+       <view wx:if="{{data.totalProfit==0}}" class='no-data'>暂无数据</view>
+       <label wx:if="{{data.listProfit.length}}" wx:for="{{data.listProfit}}" wx:key="{{index}}">
+       <view class='item'>
+           <view>{{item.networkName}}</view>
+           <view>{{item.networkProfit}}</view>
+           <view>{{item.partnerProfit}}</view>
+           <view>{{item.totalProfit}}</view>
+       </view>
+       </label>
+    </view>
+</view>

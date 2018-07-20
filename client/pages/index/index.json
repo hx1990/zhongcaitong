@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#dc3516",
+  "navigationBarTitleText": "中彩通",
+  "navigationBarTextStyle": "#fff",
+  "usingComponents": {
+    "zan-stepper": "../../dist/stepper/index",
+    "zan-noticebar": "../../dist/noticebar/index"
+  }
+ 
+}

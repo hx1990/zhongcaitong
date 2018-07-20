@@ -1,0 +1,36 @@
+.content{
+  width: 100%;
+}
+.money{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 10rpx solid #ccc;
+  padding-left: 30rpx;
+}
+.getmoney{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardnumber{
+  margin-left: 20rpx;
+}
+.getmoney .item {
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 30rpx;
+  align-items: center;
+}
+.item input{
+  border: 2rpx solid #ccc;
+  width: 20%;
+  text-align: center;
+}
+button{
+  background: #dc3516;
+  color: #fff;
+}

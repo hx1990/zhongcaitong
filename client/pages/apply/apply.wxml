@@ -1,0 +1,36 @@
+<top-bar  title='申请管理' url='/pages/my/my'/>
+<view class='content'>
+  <view class='list'>
+      <view class='item' bindtap='applycompany'>
+            <view class='left'>
+                <image src='../../img/apply.png'></image>
+                <view>合伙人申请</view>
+              </view>
+              <view class='right'>
+                <image src='../../img/go-right.png'></image>
+              </view>
+      </view>
+
+      <view class='item' bindtap="applynet">
+            <view class='left'>
+                <image src='../../img/apply.png'></image>
+                <view>网点申请</view>
+              </view>
+              <view class='right'>
+                <image src='../../img/go-right.png'></image>
+              </view>
+      </view>
+
+      <view class='item' bindtap="applysender">
+            <view class='left'>
+                <image src='../../img/apply.png'></image>
+                <view>送票员申请</view>
+              </view>
+              <view class='right'>
+                <image src='../../img/go-right.png'></image>
+              </view>
+      </view>
+
+      
+ </view>
+</view>

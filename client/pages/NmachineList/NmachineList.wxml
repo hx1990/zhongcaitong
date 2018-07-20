@@ -1,0 +1,23 @@
+<top-bar title="设备管理" url="/pages/my/my"/>
+<view class='content'>
+   <view class='title'>
+   我管理设备：{{data.length}}台
+   </view>
+    <view class='list'>
+       <view class='item head'>
+           <view>机柜编号</view>
+           <view>机柜地址</view>
+           <view>彩票数量</view>
+           <view>运行状态</view>
+       </view>
+      <view class='item' wx:if="{{data.length==0}}">暂无机柜</view>
+       <label  wx:for='{{data}}' wx:key="{{index}}">
+       <view class='item'>
+           <view>{{item.cabinetNo}}</view>
+           <view>{{item.address}}</view>
+           <view>{{item.lotteryNum}}</view>
+           <view>{{item.statusMsg}}</view>
+       </view>
+       </label>
+    </view>
+</view>

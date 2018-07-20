@@ -1,0 +1,49 @@
+<!-- <top-bar title="流水" url="/pages/my/my"/>
+<view class='content'>
+   <view class='top' bindtap="change">
+    <view class="{{inow==1?'click':''}}" data-value="1">今日流水</view>  
+    <view class="{{inow==2?'click':''}} date" data-value="2">
+       <view>选择日期：</view>
+       <picker mode="date" value="{{date}}" bindchange="bindDateChange">{{date}}</picker>
+    </view>
+   </view>
+
+   <view class='list'>
+       <view class='item'>
+           <view>ID</view>
+           <view>时间</view>
+           <view>受权号</view>
+           <view>彩种</view>
+           <view>数量</view>
+           <view>金额</view>
+           <view>分润</view>
+       </view>
+    </view>
+</view> -->
+
+<top-bar  title='网点分润' url='/pages/my/my'/>
+
+<view class='content'>
+    <view class='msg'>
+      <view >总分润：{{profitBalance}}</view>
+      <view>已提现：{{takeOutCash}}</view>
+      <!-- <button bindtap='getMoney'>提现</button> -->
+    </view>
+    <view class='list'>
+      <view>今日营业额：{{todayTotalMoney}}</view>
+      
+    </view>
+    <picker mode="date" value="{{date}}" start="2018-07-01" end="2022-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          <button type='primary' class='history'>查看历史分润</button>
+        </view>
+    </picker>
+
+    <view wx:if="{{!data.date&&click}}" class='no-data'>{{date}}营业额为0，没有分润</view>
+    <view class='history-detail' wx:if="{{data.date}}">
+      <view>日期:{{data.date}}</view>
+      <view>网点分润:{{data.networkProfit}}</view>
+      <view>当天总分润分润:{{data.totalProfit}}</view>
+    </view>
+   
+</view>

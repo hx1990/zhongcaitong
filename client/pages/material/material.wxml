@@ -1,0 +1,25 @@
+<top-bar title="添票" url="/pages/my/my"/>
+<view class='content'>
+   <view class='machineinfo'>
+      <view>本机机柜编号：{{cabinetNum}}</view>
+      
+      <view>本机余票：{{lotteryNum}} 张</view>
+   </view>
+
+   <view class='addmaterial'>
+     <!-- <view class='item'>
+        <view>本次新增票规格：</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">{{array[index]}}
+        </picker>
+     </view> -->
+     <view class='item'>
+        <view>新添加票量：</view>
+        <input bindinput="addPaper" ></input>
+        <view>张</view>
+     </view>
+
+    <view class='number item'>新增后本机余票：{{total}} 张</view>
+   </view>
+
+   <button bindtap='submit'>确认无误</button>
+</view>

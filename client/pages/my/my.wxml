@@ -1,0 +1,189 @@
+<view class='top'>
+   <!-- <view class='config' bindtap='set'>
+       <image src='../../img/config.png'></image>
+      <view>设置</view>  
+   </view> -->
+   <view class='title'>中彩通</view>
+   <view class='userinfo'>
+      <view class='item'>
+         <open-data class='userPic' type="userAvatarUrl"></open-data>
+         <open-data type="userNickName"></open-data>
+       </view>
+       <view class='item text'>
+          <view>积分：{{integral}}</view>
+          <view>角色：{{role}}</view>
+       </view>
+   </view>
+</view>
+<view class='top-hold'>
+</view>
+<view class='content'>
+  <view class='list'>
+    <view class='item one' bindtap='saoma'>
+        <image src='../../img/saoma.png'></image>
+        <view>扫一扫</view>
+    </view>
+    <view class='item' bindtap='bayHisory'>
+       <view class='left'>
+          <image src='../../img/history.png'></image>
+          <view>购票记录</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+
+    <view class='item' bindtap='apply'>
+       <view class='left'>
+          <image src='../../img/apply.png'></image>
+          <view>申请入口</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+    
+    <view class='item' bindtap='server'>
+       <view class='left'>
+          <image src='../../img/server.png'></image>
+           <view>客服</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view> 
+    <!-- <view class='item' bindtap='replaceMoney'>
+       <view class='left'>
+          <image src='../../img/change.png'></image>
+           <view>对彩</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view> -->
+     
+    <!-- <view class='apply'>
+        <view class='item' bindtap='applycompany'>合伙人</view>
+         <view class='item' bindtap="applynet">网点</view>
+          <view class='item' bindtap="applysender">送票员</view>
+    </view> -->
+     
+     <view class='componey'>合伙人</view>
+     <view class='item' bindtap='dividend'>
+       <view class='left'>
+          <image src='../../img/fencheng.png'></image>
+           <view>分润</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+     </view>
+
+    <!-- <view class='item' bindtap='withdraw'>
+       <view class='left'>
+          <image src='../../img/tixian.png'></image>
+           <view>提现</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view> -->
+
+    <view class='item' bindtap='netPoint'>
+       <view class='left'>
+          <image src='../../img/netpoint.png'></image>
+           <view>网点</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+
+    <!-- <view class='item' bindtap='sendPaper'>
+       <view class='left'>
+          <image src='../../img/piao.png'></image>
+           <view>送票</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view> -->
+    
+    <view class='componey'>网点</view>
+    <view class='item' bindtap='water'>
+       <view class='left'>
+          <image src='../../img/water.png'></image>
+           <view>分润</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+
+    <!-- <view class='item' bindtap='networkDraw'>
+       <view class='left'>
+          <image src='../../img/tixian.png'></image>
+           <view>提现</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view> -->
+
+    <view class='item' bindtap='networkMachine'>
+       <view class='left'>
+          <image src='../../img/machine.png'></image>
+           <view>设备</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+
+     
+   
+   <view class='componey'>送票员</view>
+    <!-- <view class='item' bindtap='lock'>
+       <view class='left'>
+          <image src='../../img/lock.png'></image>
+           <view>开锁</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view> -->
+
+    <view class='item' bindtap='material'>
+       <view class='left'>
+          <image src='../../img/material.png'></image>
+           <view>添加物料</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+
+    <view class='item' bindtap='machine'>
+       <view class='left'>
+          <image src='../../img/machine.png'></image>
+           <view>机柜管理</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+
+    <view class='item' >
+       <view class='left'>
+          <image src='../../img/machine.png'></image>
+           <view>中彩通扫码</view>
+        </view>
+        <view class='right'>
+          <image src='../../img/go-right.png'></image>
+        </view>
+    </view>
+   
+    
+  
+  </view>
+</view>

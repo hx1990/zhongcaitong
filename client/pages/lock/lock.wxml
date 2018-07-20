@@ -1,0 +1,9 @@
+<top-bar title="开柜" url="/pages/my/my"/>
+<view class='content'>
+   <view class='machineinfo'>
+      <view>本机受权码：</view>
+      <view>地址：</view>
+      <view>本机余票： 张</view>
+   </view>
+   <button>打开机柜</button>
+</view>

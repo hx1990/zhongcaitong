@@ -1,0 +1,19 @@
+<top-bar  title='购票记录' url='/pages/my/my'/>
+<view class='content'>
+    <view class='list'>
+       <view class='item title'>
+          <view>时间日期</view>
+           <view>数量</view>
+           <view>金额</view>
+            <view>出票状态</view>
+       </view>
+       <label wx:for='{{bayHistory}}' wx:key="{{index}}">
+       <view class='item'>
+           <view>{{item.payTime}}</view>
+           <view>{{item.num}}</view>
+           <view>{{item.payMoney}}</view>
+           <view>{{item.statusMessage}}</view>
+       </view>
+       </label>
+    </view>
+</view>
